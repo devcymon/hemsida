@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hicu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="header-logo">
+      <img src="Logo.png" alt="Logo">
+    </div>
+    <nav class="header-links">
+      <a href="sverige.html">Sverige</a>
+      <a href="utrikes.html">Utrikes</a>
+      <a href="lokalt.html">Lokalt</a>
+      
+      <!-- Hamburger menu -->
+      <div class="hamburger-menu">
+        <button class="hamburger-btn" id="hamburgerBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <!-- Hamburger dropdown med KORREKTA klassnamn -->
+        <div class="hamburger-dropdown" id="hamburgerDropdown">
+          
+          <!-- Ditt Omni sektion -->
+          <div class="hamburger-omni">
+            <div class="hamburger-header">Ditt Omni</div>
+            <div class="hamburger-omni-grid">
+              <a href="#" class="hamburger-omni-item">
+                <span class="text">Bli medlem i Omni Mer</span>
+                <span class="arrow">›</span>
+              </a>
+              <a href="#" class="hamburger-omni-item">
+                <span class="text">Logga in</span>
+                <span class="arrow">›</span>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Nyheter & Fördjupning sektion -->
+          <div class="hamburger-news">
+            <div class="hamburger-header">Nyheter & Fördjupning</div>
+            <div class="hamburger-news-grid">
+              <div class="hamburger-news-column">
+                <a href="sverige.html" class="hamburger-news-item">
+                  <span class="text">Inrikes</span>
+                  <span class="arrow">›</span>
+                </a>
+                <a href="utrikes.html" class="hamburger-news-item">
+                  <span class="text">Utrikes</span>
+                  <span class="arrow">›</span>
+                </a>
+                <a href="#" class="hamburger-news-item">
+                  <span class="text">Ekonomi</span>
+                  <span class="arrow">›</span>
+                </a>
+                <a href="#" class="hamburger-news-item">
+                  <span class="text">Politik</span>
+                  <span class="arrow">›</span>
+                </a>
+                <a href="opinion.html" class="hamburger-news-item">
+                  <span class="text">Opinion</span>
+                  <span class="arrow">›</span>
+                </a>
+              </div>
+              <div class="hamburger-news-column">
+                <a href="#" class="hamburger-news-item">
+                  <span class="text">Sport</span>
+                  <span class="arrow">›</span>
+                </a>
+                <a href="#" class="hamburger-news-item">
+                  <span class="text">Nöje & kultur</span>
+                  <span class="arrow">›</span>
+                </a>
+                <a href="#" class="hamburger-news-item">
+                  <span class="text">Tech</span>
+                  <span class="arrow">›</span>
+                </a>
+                <a href="#" class="hamburger-news-item">
+                  <span class="text">Perspektiv på världen</span>
+                  <span class="arrow">›</span>
+                </a>
+                <a href="#" class="hamburger-news-item">
+                  <span class="text">Innovation & framtid</span>
+                  <span class="arrow">›</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Om Hicu och Din personliga data -->
+          <div class="hamburger-bottom">
+            <div class="hamburger-section">
+              <div class="hamburger-header">Om Hicu</div>
+              <div class="hamburger-section-items">
+                <a href="#" class="hamburger-section-item">
+                  <span class="text">Tyck till om Hicu</span>
+                  <span class="arrow">›</span>
+                </a>
+                <a href="#" class="hamburger-section-item">
+                  <span class="text">Hjälp & kontakt</span>
+                  <span class="arrow">›</span>
+                </a>
+              </div>
+            </div>
+            <div class="hamburger-section">
+              <div class="hamburger-header">Din personliga data</div>
+              <div class="hamburger-section-items">
+                <a href="#" class="hamburger-section-item">
+                  <span class="text">Personuppgiftspolicy</span>
+                </a>
+                <a href="#" class="hamburger-section-item">
+                  <span class="text">Sekretessinställningar</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="news-container"></main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
